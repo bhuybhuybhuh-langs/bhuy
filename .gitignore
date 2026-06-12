@@ -1,0 +1,17 @@
+# Local/private knowledge-base artifacts
+data/*.sqlite
+data/*.sqlite-*
+data/*.db
+data/*.jsonl
+data/raw/
+*.epub
+*.pdf
+*.mobi
+*.azw3
+
+# Local OS/editor files
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.pyc

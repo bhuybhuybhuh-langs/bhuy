@@ -1,0 +1,7 @@
+interface:
+  display_name: "Value Investing KB"
+  short_description: "用本地价值投资知识库分析金融问题"
+  default_prompt: "Use $value-investing-kb to analyze this company or stock with the local value-investing knowledge base first."
+
+policy:
+  allow_implicit_invocation: true
