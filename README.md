@@ -1,50 +1,44 @@
 # Value Investing KB Skill - AI Value Investing Research Framework for Codex
 
-`value-investing-kb` is an AI-assisted value investing skill for Codex. It is designed for stock research, company analysis, valuation, financial statement review, industry chain analysis, moat analysis, management evaluation, capital allocation review, free cash flow modeling, margin of safety judgment, and long-term investment thesis building.
+`value-investing-kb` is an AI-assisted value investing skill for Codex. It is designed for fundamental stock analysis, company research, equity research, valuation work, financial statement review, industry-chain analysis, moat assessment, management-quality evaluation, capital allocation review, free cash flow modeling, owner-earnings analysis, margin-of-safety judgment, and long-term investment thesis building.
 
-This repository provides a reusable investment research workflow that combines value investing principles, Feynman-style explanation, Graham downside protection, Fisher growth quality, Munger/Duan Yongping/Li Lu business-quality thinking, and supply-chain bottleneck analysis. It helps turn vague questions like "Is this stock worth buying?" into a structured process with facts, inferences, conclusions, valuation assumptions, risks, and falsification conditions.
+This repository provides a reusable investment research workflow for China stocks, US stocks, Hong Kong stocks, ETFs, and public companies across global markets. It combines value investing principles, Feynman-style explanation, Graham downside protection, Fisher growth quality, Charlie Munger mental models, Duan Yongping business-quality thinking, Li Lu value-investing discipline, discounted cash flow analysis, and supply-chain bottleneck research. It helps turn vague questions like "Is this stock worth buying?" into a structured process with facts, inferences, conclusions, valuation assumptions, risks, and falsification conditions.
 
 The public repository contains the Codex skill instructions, analytical checklists, reusable frameworks, version notes, and a local retrieval script. It intentionally does **not** include copyrighted books, OCR exports, raw excerpts, generated chunks, or SQLite databases.
 
-## SEO Keywords
-
-Value investing, AI investing skill, Codex skill, stock analysis, company analysis, equity research, valuation framework, discounted cash flow, DCF, free cash flow, owner earnings, margin of safety, moat analysis, management quality, capital allocation, Graham investing, Fisher growth investing, Charlie Munger mental models, Duan Yongping investing, Li Lu value investing, supply chain analysis, industry chain analysis, bottleneck company analysis, financial statement analysis, investment checklist, long-term investing, fundamental analysis, China stocks, US stocks, Hong Kong stocks.
-
-中文关键词：价值投资、股票分析、公司分析、企业分析、估值框架、DCF 估值、自由现金流、安全边际、护城河、管理层、资本配置、财报分析、产业链分析、供应链瓶颈、格雷厄姆、费雪、芒格、段永平、李录、长期投资、基本面分析、投资清单、Codex 技能、AI 投资研究。
-
 ## What This Skill Does
 
-- Builds investment analysis around first principles instead of ad-hoc market opinions.
+- Builds value investing analysis around first principles instead of ad-hoc market opinions.
 - Forces a Feynman-style explanation before reaching a buy, hold, avoid, or continue-tracking conclusion.
 - Separates `facts`, `inferences`, and `conclusions` so the reasoning chain is auditable.
-- Combines Graham downside protection, Fisher growth-quality checks, Munger/Duan Yongping/Li Lu style business-quality thinking, and supply-chain bottleneck analysis.
+- Combines Graham-style downside protection, Fisher-style growth-quality checks, Munger/Duan Yongping/Li Lu style business-quality thinking, and supply-chain bottleneck analysis.
 - Requires valuation to bridge future free cash flow into enterprise value, equity value, intrinsic value per share, and margin of safety.
 - Adds explicit failure conditions so the investment thesis can be falsified later.
 - Helps prevent common errors such as confusing market heat with business quality, confusing revenue growth with free cash flow, and treating a popular industry theme as a real moat.
 
 ## Best Use Cases
 
-- Analyze whether a stock is worth researching, buying, holding, or avoiding.
-- Review a company using value investing principles and long-term business quality.
-- Build a structured investment memo.
-- Compare valuation assumptions with current market capitalization.
-- Analyze free cash flow quality and owner earnings.
+- Analyze whether a stock, ETF, or public company is worth researching, buying, holding, or avoiding.
+- Review a business using value investing principles, financial statement analysis, and long-term company-quality judgment.
+- Build a structured investment memo for equity research, portfolio review, or personal investment decision-making.
+- Compare DCF valuation assumptions with current market capitalization, enterprise value, and expected free cash flow.
+- Analyze free cash flow quality, owner earnings, revenue durability, ROE/ROIC, margin resilience, leverage, and dilution risk.
 - Judge whether a company has a durable moat.
 - Evaluate management integrity, incentive alignment, and capital allocation.
 - Map a company into its upstream, midstream, downstream, or infrastructure position.
-- Identify whether a company is a real supply-chain bottleneck or only riding a hot theme.
+- Identify whether a company is a real supply-chain or industry-chain bottleneck or only riding a hot market theme.
 - Build a falsifiable investment thesis with clear mistake signals.
 
 ## Core Analysis Modules
 
-1. **Feynman Gate** - explain the business, moat, culture, downside risk, and margin of safety in plain language.
+1. **Feynman Gate** - explain the business, customer value, moat, culture, downside risk, and margin of safety in plain language.
 2. **Graham Downside Filter** - investment vs speculation, balance-sheet safety, earnings stability, Mr. Market, and margin of safety.
 3. **Fisher Growth Quality** - long runway, R&D productivity, sales organization, management depth, profit-margin resilience, and scuttlebutt evidence.
 4. **Business Essence** - customer value proposition, revenue engine, moat type, moat trend, and industry endgame.
 5. **Supply-Chain Bottleneck Framework** - upstream/downstream position, customer mapping, bottleneck type, value capture, and market perception gap.
 6. **Culture and Management** - values, incentives, honesty, long-termism, disclosure quality, and capital allocation discipline.
 7. **Financial Reality** - revenue, margins, ROE/ROIC, operating cash flow, free cash flow, leverage, dilution, and accounting quality.
-8. **Valuation Bridge** - future FCF to enterprise value, equity value, intrinsic value per share, and margin of safety.
+8. **Valuation Bridge** - discounted cash flow, future FCF, enterprise value, equity value, intrinsic value per share, and margin of safety.
 9. **Inversion and Risk** - why the thesis could fail, what would prove it wrong, and what opportunity cost exists.
 10. **Final Output Contract** - facts, inferences, conclusions, action view, and falsification conditions.
 
@@ -99,10 +93,10 @@ The database is not included in this public repo. Keep copyrighted source books,
 ## Usage Examples
 
 ```bash
-python3 scripts/query_kb.py "能力圈"
-python3 scripts/query_kb.py "安全边际"
-python3 scripts/query_kb.py "自由现金流 护城河"
-python3 scripts/query_kb.py "产业链 瓶颈"
+python3 scripts/query_kb.py "circle of competence"
+python3 scripts/query_kb.py "margin of safety"
+python3 scripts/query_kb.py "free cash flow moat"
+python3 scripts/query_kb.py "supply chain bottleneck"
 ```
 
 For an analysis request, invoke the skill and follow the fixed workflow in `SKILL.md`:
@@ -110,8 +104,8 @@ For an analysis request, invoke the skill and follow the fixed workflow in `SKIL
 1. Read `references/investment_principles.md`.
 2. Read `references/investment_checklist.md`.
 3. Use `scripts/query_kb.py` for local evidence when a database is available.
-4. Separate `事实 / 推断 / 结论`.
-5. Include `判错条件`.
+4. Separate `facts`, `inferences`, and `conclusions`.
+5. Include falsification conditions.
 
 ## Version Features
 
@@ -128,24 +122,6 @@ Current version: `v0.1.0`
 ## Suggested GitHub Repository Description
 
 AI value investing research skill for Codex: stock analysis, DCF valuation, moat, free cash flow, management quality, capital allocation, margin of safety, and supply-chain bottleneck framework.
-
-## Suggested GitHub Topics
-
-```text
-value-investing
-ai-investing
-codex-skill
-stock-analysis
-equity-research
-valuation
-dcf
-free-cash-flow
-margin-of-safety
-moat
-financial-analysis
-supply-chain-analysis
-capital-allocation
-```
 
 ## Safety Notes
 
